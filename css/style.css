@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Oleo+Script");
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Monserrat', sans-serif;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
+  align-items: stretch;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  justify-content: flex-start;
+  -ms-flex-pack: flex-start;
+  -webkit-align-content: flex-start;
+  -moz-align-content: flex-start;
+  -ms-align-content: flex-start;
+  align-content: flex-start; }
+  @media (min-width: 1680px) {
+    body {
+      margin-bottom: 7%; } }
+  body .my-jumbotron {
+    -webkit-box-flex: 0 0 100%;
+    -moz-box-flex: 0 0 100%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-align-content: center;
+    -moz-align-content: center;
+    -ms-align-content: center;
+    align-content: center;
+    background: url("../images/build/jumbo.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 100vh;
+    color: white; }
+    body .my-jumbotron > .my-navbar {
+      -webkit-box-flex: 0 1 auto;
+      -moz-box-flex: 0 1 auto;
+      -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+      width: 100vw;
+      min-width: 100vw; }
+      body .my-jumbotron > .my-navbar ul {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+        -ms-flex-pack: center;
+        -webkit-align-content: center;
+        -moz-align-content: center;
+        -ms-align-content: center;
+        align-content: center;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding: 0;
+        list-style-type: none; }
+        body .my-jumbotron > .my-navbar ul li {
+          -webkit-box-flex: 0 1 5%;
+          -moz-box-flex: 0 1 5%;
+          -webkit-flex: 0 1 5%;
+          -ms-flex: 0 1 5%;
+          flex: 0 1 5%;
+          font-size: 14px;
+          padding: 20px 30px;
+          font-weight: 400;
+          text-transform: uppercase;
+          text-align: center; }
+          @media screen and (max-width: 576px) {
+            body .my-jumbotron > .my-navbar ul li {
+              padding: 10px 10px;
+              -webkit-box-flex: 0 0 100%;
+              -moz-box-flex: 0 0 100%;
+              -webkit-flex: 0 0 100%;
+              -ms-flex: 0 0 100%;
+              flex: 0 0 100%; } }
+          body .my-jumbotron > .my-navbar ul li:first-child {
+            -webkit-box-flex: 0 1 40%;
+            -moz-box-flex: 0 1 40%;
+            -webkit-flex: 0 1 40%;
+            -ms-flex: 0 1 40%;
+            flex: 0 1 40%;
+            font-family: 'Oleo Script', cursive;
+            color: #fed136;
+            font-size: 26px;
+            text-transform: none;
+            text-align: left; }
+            @media screen and (max-width: 576px) {
+              body .my-jumbotron > .my-navbar ul li:first-child {
+                padding: 10px 10px;
+                -webkit-box-flex: 0 0 100%;
+                -moz-box-flex: 0 0 100%;
+                -webkit-flex: 0 0 100%;
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                text-align: center; } }
+          body .my-jumbotron > .my-navbar ul li span:hover {
+            opacity: .5;
+            cursor: pointer; }
+    body .my-jumbotron > .my-inside-content {
+      -webkit-box-flex: 1 0 auto;
+      -moz-box-flex: 1 0 auto;
+      -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center;
+      -webkit-align-content: center;
+      -moz-align-content: center;
+      -ms-align-content: center;
+      align-content: center; }
+      body .my-jumbotron > .my-inside-content button.my-jumbo-button {
+        margin: 30px 0; }
+      body .my-jumbotron > .my-inside-content h1 {
+        text-transform: uppercase;
+        font-size: 75px;
+        font-weight: 700; }
+      body .my-jumbotron > .my-inside-content h2 {
+        font-size: 40px;
+        font-style: italic; }
+      @media screen and (max-width: 576px) {
+        body .my-jumbotron > .my-inside-content h1, body .my-jumbotron > .my-inside-content h2 {
+          font-size: 1em;
+          margin: 30px 0; } }
+  body .my-section2 .my-section2-cards .my-section2-card {
+    margin: 10px;
+    border: none;
+    -webkit-box-flex: 0 0 24%;
+    -moz-box-flex: 0 0 24%;
+    -webkit-flex: 0 0 24%;
+    -ms-flex: 0 0 24%;
+    flex: 0 0 24%; }
+    @media (max-width: 576px) {
+      body .my-section2 .my-section2-cards .my-section2-card {
+        -webkit-box-flex: 0 0 80%;
+        -moz-box-flex: 0 0 80%;
+        -webkit-flex: 0 0 80%;
+        -ms-flex: 0 0 80%;
+        flex: 0 0 80%; } }
+    body .my-section2 .my-section2-cards .my-section2-card .my-section2-header {
+      border: none; }
+      body .my-section2 .my-section2-cards .my-section2-card .my-section2-header i {
+        color: #fed136; }
+        body .my-section2 .my-section2-cards .my-section2-card .my-section2-header i:hover {
+          opacity: .5;
+          cursor: pointer; }
+    body .my-section2 .my-section2-cards .my-section2-card > div h5 {
+      font-weight: 700;
+      margin: 0;
+      padding: 0 0 10px 0; }
+    body .my-section2 .my-section2-cards .my-section2-card > div p {
+      color: #777777; }
+  body .my-section2, body .my-section3 {
+    -webkit-box-flex: 0 0 100%;
+    -moz-box-flex: 0 0 100%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-align-content: center;
+    -moz-align-content: center;
+    -ms-align-content: center;
+    align-content: center; }
+    body .my-section2 .my-section2-cards, body .my-section2 .my-section3-cards, body .my-section3 .my-section2-cards, body .my-section3 .my-section3-cards {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center;
+      -webkit-align-content: center;
+      -moz-align-content: center;
+      -ms-align-content: center;
+      align-content: center;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin: 0 0 50px 0; }
+      body .my-section2 .my-section2-cards .my-section3-card, body .my-section2 .my-section3-cards .my-section3-card, body .my-section3 .my-section2-cards .my-section3-card, body .my-section3 .my-section3-cards .my-section3-card {
+        margin: 10px;
+        -webkit-box-flex: 0 0 24%;
+        -moz-box-flex: 0 0 24%;
+        -webkit-flex: 0 0 24%;
+        -ms-flex: 0 0 24%;
+        flex: 0 0 24%; }
+        @media (max-width: 576px) {
+          body .my-section2 .my-section2-cards .my-section3-card, body .my-section2 .my-section3-cards .my-section3-card, body .my-section3 .my-section2-cards .my-section3-card, body .my-section3 .my-section3-cards .my-section3-card {
+            -webkit-box-flex: 0 0 80%;
+            -moz-box-flex: 0 0 80%;
+            -webkit-flex: 0 0 80%;
+            -ms-flex: 0 0 80%;
+            flex: 0 0 80%; } }
+        body .my-section2 .my-section2-cards .my-section3-card:hover, body .my-section2 .my-section3-cards .my-section3-card:hover, body .my-section3 .my-section2-cards .my-section3-card:hover, body .my-section3 .my-section3-cards .my-section3-card:hover {
+          opacity: .5;
+          cursor: pointer; }
+        body .my-section2 .my-section2-cards .my-section3-card > div, body .my-section2 .my-section3-cards .my-section3-card > div, body .my-section3 .my-section2-cards .my-section3-card > div, body .my-section3 .my-section3-cards .my-section3-card > div {
+          padding: 20px; }
+          body .my-section2 .my-section2-cards .my-section3-card > div h5, body .my-section2 .my-section3-cards .my-section3-card > div h5, body .my-section3 .my-section2-cards .my-section3-card > div h5, body .my-section3 .my-section3-cards .my-section3-card > div h5 {
+            font-weight: 700;
+            margin: 0; }
+          body .my-section2 .my-section2-cards .my-section3-card > div p, body .my-section2 .my-section3-cards .my-section3-card > div p, body .my-section3 .my-section2-cards .my-section3-card > div p, body .my-section3 .my-section3-cards .my-section3-card > div p {
+            font-style: italic;
+            color: #777777; }
+  body .my-section3, body .my-section5 {
+    background-color: #f7f7f7; }
+
+.my-jumbo-button {
+  background-color: #fed136;
+  color: white;
+  text-transform: uppercase;
+  padding: 15px 40px;
+  border-radius: 3px; }
+  .my-jumbo-button:hover {
+    background-color: rgba(254, 209, 54, 0.5);
+    color: white;
+    cursor: pointer; }
+
+.my-section-heading {
+  padding: 70px 0 10px 0;
+  text-align: center; }
+  .my-section-heading h1 {
+    text-transform: uppercase;
+    font-weight: 700; }
+  .my-section-heading p {
+    font-style: italic;
+    color: #777777; }
+
+/*# sourceMappingURL=style.css.map */
