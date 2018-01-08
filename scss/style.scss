@@ -5,10 +5,12 @@
 $font-gray: #777777;
 $main-bg-color: white;
 $sub-bg-color: #f7f7f7;
+$border-color: #f1f1f1;
 $main-color-hover: rgb(10, 107, 87);
 $golden-color: #fed136;
 $small-dev: 576px;
 $big-screen: 1680px;
+$medium-dev: 992px;
 
 * {
 	box-sizing: border-box; //include border and padding in total width and height of the all elements
@@ -61,6 +63,10 @@ body {
 						padding: 10px 10px;
 						@include flex(0 0 100%);
 					}
+					@media screen and (orientation: landscape) and (max-width: $medium-dev) {
+						padding: 10px 10px;
+						font-size: 12px;
+					}
 					&:first-child {
 					  @include flex(0 1 40%);
 						font-family: 'Oleo Script', cursive;
@@ -78,6 +84,8 @@ body {
 						&:hover {
 						opacity: .5;
 						cursor: pointer;
+						transition: .5s;
+						-webkit-transition: .5s;
 						}
 					}
 				}
@@ -104,8 +112,12 @@ body {
 			}
 			h1, h2 {
 				@media screen and (max-width: $small-dev) {
-					font-size: 1em;
+					font-size: 1.2em;
 					margin: 30px 0;
+				}
+				@media screen and (orientation: landscape) and (max-width: $medium-dev){
+					font-size: 1em;
+					margin: 10px 0;
 				}
 			}
 		}
@@ -127,6 +139,8 @@ body {
 						&:hover {
 							opacity: .5;
 							cursor: pointer;
+							transition: .5s;
+							-webkit-transition: .5s;
 						}
 					}
 				}
@@ -144,7 +158,7 @@ body {
 		}
 	}
 
-	.my-section2, .my-section3 {
+	.my-section2, .my-section3, .my-section4 {
 		@include flex(0 0 100%);
 		@include flexbox();
 		@include flex-direction(column);
@@ -168,6 +182,8 @@ body {
 				&:hover {
 					opacity: .5;
 					cursor: pointer;
+					transition: .5s;
+					-webkit-transition: .5s;
 				}
 				>div {
 					padding: 20px;
@@ -179,6 +195,102 @@ body {
 						font-style: italic;
 						color: $font-gray;
 					}
+				}
+			}
+		}
+	}
+
+	.my-section4 {
+		.separator {
+			min-height: 80px;
+			min-width: 5px;
+			background-color: $border-color;
+			@media screen and (max-width: $small-dev) {
+				min-height: 40px;
+			}
+		}
+		.my-section4-content {
+			@include flexbox();
+			@include flex-direction(row);
+			@include align-items(center);
+			@include justify-content(center);
+			@include align-content(center);
+			@include flex-wrap(wrap);
+			.my-section4-text {
+				@include flex(0 0 30%);
+				max-width: 20%;
+				padding: 0;
+				margin: 0;
+				@media screen and (max-width: $small-dev) {
+					max-width: 25%;
+				}
+				h6 {
+					text-transform: uppercase;
+					font-weight: bold;
+				}
+				p {
+					font-size: .9em;
+					color: $font-gray;
+					&:last-child {
+						@media screen and (max-width: $small-dev) {
+							display: none;
+						}
+					}
+					&:not(:last-child) {
+						font-weight: bold;
+						font-size: .9em;
+					}
+				}
+
+				h6, p:not(:last-child) {
+					@media screen and (max-width: $small-dev) {
+						font-size: .7em;
+					}
+				}
+			}
+			.my-section4-text-before {
+				position: absolute;
+				left: 20%;
+				text-align: right;
+				@media screen and (min-width: $big-screen) {
+					left: 23%;
+				}
+				@media screen and (max-width: $small-dev) {
+					left: 5%;
+				}
+				@media (orientation: landscape) and (min-width: $small-dev) and (max-width: $medium-dev){
+					left: 10%;
+				}
+			}
+			.my-section4-text-after {
+				position: absolute;
+				right: 20%;
+				text-align: left;
+				@media screen and (min-width: $big-screen) {
+					right: 23%;
+				}
+				@media screen and (max-width: $small-dev) {
+					right: 5%;
+				}
+				@media (orientation: landscape) and (min-width: $small-dev) and (max-width: $medium-dev) {
+					right: 10%;
+				}
+			}
+
+			.my-section4-pic {
+				@include flex(0 0 50%);
+				padding: 5px;
+				border: 8px solid $border-color;
+				border-radius: 50%;
+				@media screen and (max-width: $small-dev) {
+					@include flex(0 0 35%);
+				}
+				&:hover {
+					opacity: .4;
+					cursor: pointer;
+					border-color: lightblue;
+					transition: .5s;
+					-webkit-transition: .5s;
 				}
 			}
 		}
@@ -202,7 +314,7 @@ body {
 	}
 }
 .my-section-heading {
-	padding: 70px 0 10px 0;
+	padding: 70px 0 30px 0;
 	text-align: center;
 	h1 {
 		text-transform: uppercase;
