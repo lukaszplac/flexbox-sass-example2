@@ -84,8 +84,8 @@ body {
 						&:hover {
 						opacity: .5;
 						cursor: pointer;
-						transition: .5s;
-						-webkit-transition: .5s;
+						transition: .3s;
+						-webkit-transition: .3s;
 						}
 					}
 				}
@@ -139,8 +139,8 @@ body {
 						&:hover {
 							opacity: .5;
 							cursor: pointer;
-							transition: .5s;
-							-webkit-transition: .5s;
+							transition: .3s;
+							-webkit-transition: .3s;
 						}
 					}
 				}
@@ -158,14 +158,14 @@ body {
 		}
 	}
 
-	.my-section2, .my-section3, .my-section4 {
+	.my-section2, .my-section3, .my-section4, .my-section5, .my-section6 {
 		@include flex(0 0 100%);
 		@include flexbox();
 		@include flex-direction(column);
 		@include align-items(center);
 		@include justify-content(center);
 		@include align-content(center);
-		.my-section2-cards, .my-section3-cards {
+		.my-section2-cards, .my-section3-cards, .my-section5-team, .my-section6-logos {
 			@include flexbox();
 			@include flex-direction(row);
 			@include align-items(center);
@@ -182,8 +182,8 @@ body {
 				&:hover {
 					opacity: .5;
 					cursor: pointer;
-					transition: .5s;
-					-webkit-transition: .5s;
+					transition: .3s;
+					-webkit-transition: .3s;
 				}
 				>div {
 					padding: 20px;
@@ -201,6 +201,7 @@ body {
 	}
 
 	.my-section4 {
+		margin: 0 0 50px 0;
 		.separator {
 			min-height: 80px;
 			min-width: 5px;
@@ -289,8 +290,199 @@ body {
 					opacity: .4;
 					cursor: pointer;
 					border-color: lightblue;
-					transition: .5s;
-					-webkit-transition: .5s;
+					transition: .3s;
+					-webkit-transition: .3s;
+				}
+			}
+		}
+	}
+
+	.my-section5 {
+		padding: 0 0 50px 0;
+		.my-section5-team {
+			.my-section5-member {
+				margin: 20px;
+				@include flex(0 0 20%);
+				@include flexbox();
+				@include flex-direction(column);
+				@include align-items(center);
+				@include justify-content(center);
+				@include align-content(center);
+				img {
+					border: 5px solid gray;
+				}
+				h6 {
+					padding-top: 15px;
+					font-weight: bold;
+				}
+				p {
+					color: $font-gray;
+				}
+				.my-section5-icons {
+					@include flexbox();
+					@include flex-direction(row);
+					@include align-items(center);
+					@include justify-content(center);
+					@include align-content(center);
+					div {
+						margin: 5px;
+						width: 35px;
+						height: 35px;
+						padding: 5px;
+						border: 3px solid black;
+						text-align: center;
+						border-radius: 50%;
+						&:hover {
+							background-color: black;
+							color: white;
+							cursor: pointer;
+							transition: .3s;
+							-webkit-transition: .3s;
+						}
+					}
+				}
+			}
+		}
+		.my-section5-footer {
+			color: $font-gray;
+			text-align: center;
+			width: 60%;
+		}
+	}
+
+	.my-section6 {
+		.my-section6-logos {
+			padding: 30px 0 30px 0;
+			.my-section6-logo {
+				@include flex(0 0 15%);
+				min-width: 200px;
+				padding: 15px;
+				opacity: .4;
+				&:hover {
+					opacity: 1;
+					transition: .3s;
+					-webkit-transition: .3s;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+
+	.my-section7-back {
+		@include flexbox();
+		@include flex-direction(column);
+		@include align-items(stretch);
+		@include justify-content(center);
+		@include align-content(stretch);
+		background: url('../images/build/map.jpg') no-repeat center center;
+		background-size: cover;
+		height: 100vh;
+		min-height: 100vh;
+			.my-section7-jumbo {
+				@include flex(0 1 100%);
+				@include flexbox();
+				@include flex-direction(column);
+				@include align-items(center);
+				@include justify-content(center);
+				@include align-content(center);
+				background-color: rgba(0, 0, 0, .2);
+				background-size: cover;
+				height: 100vh;
+				min-height: 100vh;
+				color: white;
+				&:hover {
+					background-color: rgba(0, 0, 0, .7);
+					transition: 1s;
+				}
+				transition: 1s;
+				.my-section7-form {
+					@include flex(0 1 auto);
+					@include flexbox();
+					@include flex-direction(row);
+					@include align-items(center);
+					@include justify-content(center);
+					@include align-content(center);
+					@include flex-wrap(wrap);
+					align-self: stretch;
+					.my-section7-left {
+						@include flex(0 1 20%);
+						margin: 30px;
+						@media screen and (max-width: $small-dev) {
+							@include flex(0 1 90%);
+							margin: 10px;
+						}
+					}
+					.my-section7-right {
+						margin: 30px;
+						@include flex(0 1 40%);
+						@media screen and (max-width: $small-dev) {
+							@include flex(0 1 90%);
+							margin: 10px;
+						}
+					}
+					@media screen and (max-width: $small-dev) {
+						@include flex(0 1 100%);
+					}
+				}
+				button {
+					@include flex(0 1 auto);
+					margin: 10px;
+				}
+			}
+	}
+
+	.my-section8 {
+		padding: 20px;
+		@include flex(0 0 100%);
+		@include flexbox();
+		@include flex-direction(row);
+		@include align-items(center);
+		@include justify-content(flex-start);
+		@include align-content(center);
+		@include flex-wrap(wrap);
+		@media screen and (max-width: $small-dev) {
+			@include justify-content(center);
+		}
+		p {
+			@include flex(0 0 30%);
+			text-align: center;
+			font-size: 14px;
+			padding-top: 10px;
+			@media screen and (max-width: $small-dev) {
+				@include flex(0 1 90%);
+				@include order(1);
+				font-size: 12px;
+			}
+		}
+		.my-section8-icons {
+			@include flexbox();
+			@include flex(0 0 30%);
+			@include flex-direction(row);
+			@include align-items(center);
+			@include justify-content(flex-end);
+			@include align-content(center);
+			@include flex-wrap(nowrap);
+			@media screen and (max-width: $small-dev) {
+				@include flex(0 1 90%);
+				@include justify-content(center);
+				@include order(0);
+			}
+			div {
+				margin: 5px;
+				width: 50px;
+				height: 50px;
+				padding: 5px;
+				border: 3px solid black;
+				text-align: center;
+				border-radius: 50%;
+				color: white;
+				background-color: black;
+				&:hover {
+					background-color: white;
+					color: black;
+					cursor: pointer;
+					transition: .3s;
+					-webkit-transition: .3s;
 				}
 			}
 		}
@@ -312,13 +504,24 @@ body {
 		color: white;
 		cursor: pointer;
 	}
+	@media screen and (max-width: $small-dev) {
+		padding: 5px 20px;
+		font-size: smaller;
+	}
 }
 .my-section-heading {
 	padding: 70px 0 30px 0;
 	text-align: center;
+	@media screen and (max-width: $small-dev) {
+		padding: 10px 0 10px 0;
+	}
 	h1 {
 		text-transform: uppercase;
 		font-weight: 700;
+		@media screen and (max-width: $small-dev) {
+			padding: 10px 0 10px 0;
+			font-size: 25px;
+		}
 	}
 	p {
 		font-style: italic;

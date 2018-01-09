@@ -147,8 +147,8 @@ body {
           body .my-jumbotron > .my-navbar ul li span:hover {
             opacity: .5;
             cursor: pointer;
-            transition: .5s;
-            -webkit-transition: .5s; }
+            transition: .3s;
+            -webkit-transition: .3s; }
     body .my-jumbotron > .my-inside-content {
       -webkit-box-flex: 1 0 auto;
       -moz-box-flex: 1 0 auto;
@@ -216,15 +216,15 @@ body {
         body .my-section2 .my-section2-cards .my-section2-card .my-section2-header i:hover {
           opacity: .5;
           cursor: pointer;
-          transition: .5s;
-          -webkit-transition: .5s; }
+          transition: .3s;
+          -webkit-transition: .3s; }
     body .my-section2 .my-section2-cards .my-section2-card > div h5 {
       font-weight: 700;
       margin: 0;
       padding: 0 0 10px 0; }
     body .my-section2 .my-section2-cards .my-section2-card > div p {
       color: #777777; }
-  body .my-section2, body .my-section3, body .my-section4 {
+  body .my-section2, body .my-section3, body .my-section4, body .my-section5, body .my-section6 {
     -webkit-box-flex: 0 0 100%;
     -moz-box-flex: 0 0 100%;
     -webkit-flex: 0 0 100%;
@@ -252,7 +252,7 @@ body {
     -moz-align-content: center;
     -ms-align-content: center;
     align-content: center; }
-    body .my-section2 .my-section2-cards, body .my-section2 .my-section3-cards, body .my-section3 .my-section2-cards, body .my-section3 .my-section3-cards, body .my-section4 .my-section2-cards, body .my-section4 .my-section3-cards {
+    body .my-section2 .my-section2-cards, body .my-section2 .my-section3-cards, body .my-section2 .my-section5-team, body .my-section2 .my-section6-logos, body .my-section3 .my-section2-cards, body .my-section3 .my-section3-cards, body .my-section3 .my-section5-team, body .my-section3 .my-section6-logos, body .my-section4 .my-section2-cards, body .my-section4 .my-section3-cards, body .my-section4 .my-section5-team, body .my-section4 .my-section6-logos, body .my-section5 .my-section2-cards, body .my-section5 .my-section3-cards, body .my-section5 .my-section5-team, body .my-section5 .my-section6-logos, body .my-section6 .my-section2-cards, body .my-section6 .my-section3-cards, body .my-section6 .my-section5-team, body .my-section6 .my-section6-logos {
       display: -webkit-box;
       display: -moz-box;
       display: -ms-flexbox;
@@ -280,7 +280,7 @@ body {
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
       margin: 0 0 50px 0; }
-      body .my-section2 .my-section2-cards .my-section3-card, body .my-section2 .my-section3-cards .my-section3-card, body .my-section3 .my-section2-cards .my-section3-card, body .my-section3 .my-section3-cards .my-section3-card, body .my-section4 .my-section2-cards .my-section3-card, body .my-section4 .my-section3-cards .my-section3-card {
+      body .my-section2 .my-section2-cards .my-section3-card, body .my-section2 .my-section3-cards .my-section3-card, body .my-section2 .my-section5-team .my-section3-card, body .my-section2 .my-section6-logos .my-section3-card, body .my-section3 .my-section2-cards .my-section3-card, body .my-section3 .my-section3-cards .my-section3-card, body .my-section3 .my-section5-team .my-section3-card, body .my-section3 .my-section6-logos .my-section3-card, body .my-section4 .my-section2-cards .my-section3-card, body .my-section4 .my-section3-cards .my-section3-card, body .my-section4 .my-section5-team .my-section3-card, body .my-section4 .my-section6-logos .my-section3-card, body .my-section5 .my-section2-cards .my-section3-card, body .my-section5 .my-section3-cards .my-section3-card, body .my-section5 .my-section5-team .my-section3-card, body .my-section5 .my-section6-logos .my-section3-card, body .my-section6 .my-section2-cards .my-section3-card, body .my-section6 .my-section3-cards .my-section3-card, body .my-section6 .my-section5-team .my-section3-card, body .my-section6 .my-section6-logos .my-section3-card {
         margin: 10px;
         -webkit-box-flex: 0 0 24%;
         -moz-box-flex: 0 0 24%;
@@ -288,33 +288,379 @@ body {
         -ms-flex: 0 0 24%;
         flex: 0 0 24%; }
         @media (max-width: 576px) {
-          body .my-section2 .my-section2-cards .my-section3-card, body .my-section2 .my-section3-cards .my-section3-card, body .my-section3 .my-section2-cards .my-section3-card, body .my-section3 .my-section3-cards .my-section3-card, body .my-section4 .my-section2-cards .my-section3-card, body .my-section4 .my-section3-cards .my-section3-card {
+          body .my-section2 .my-section2-cards .my-section3-card, body .my-section2 .my-section3-cards .my-section3-card, body .my-section2 .my-section5-team .my-section3-card, body .my-section2 .my-section6-logos .my-section3-card, body .my-section3 .my-section2-cards .my-section3-card, body .my-section3 .my-section3-cards .my-section3-card, body .my-section3 .my-section5-team .my-section3-card, body .my-section3 .my-section6-logos .my-section3-card, body .my-section4 .my-section2-cards .my-section3-card, body .my-section4 .my-section3-cards .my-section3-card, body .my-section4 .my-section5-team .my-section3-card, body .my-section4 .my-section6-logos .my-section3-card, body .my-section5 .my-section2-cards .my-section3-card, body .my-section5 .my-section3-cards .my-section3-card, body .my-section5 .my-section5-team .my-section3-card, body .my-section5 .my-section6-logos .my-section3-card, body .my-section6 .my-section2-cards .my-section3-card, body .my-section6 .my-section3-cards .my-section3-card, body .my-section6 .my-section5-team .my-section3-card, body .my-section6 .my-section6-logos .my-section3-card {
             -webkit-box-flex: 0 0 80%;
             -moz-box-flex: 0 0 80%;
             -webkit-flex: 0 0 80%;
             -ms-flex: 0 0 80%;
             flex: 0 0 80%; } }
-        body .my-section2 .my-section2-cards .my-section3-card:hover, body .my-section2 .my-section3-cards .my-section3-card:hover, body .my-section3 .my-section2-cards .my-section3-card:hover, body .my-section3 .my-section3-cards .my-section3-card:hover, body .my-section4 .my-section2-cards .my-section3-card:hover, body .my-section4 .my-section3-cards .my-section3-card:hover {
+        body .my-section2 .my-section2-cards .my-section3-card:hover, body .my-section2 .my-section3-cards .my-section3-card:hover, body .my-section2 .my-section5-team .my-section3-card:hover, body .my-section2 .my-section6-logos .my-section3-card:hover, body .my-section3 .my-section2-cards .my-section3-card:hover, body .my-section3 .my-section3-cards .my-section3-card:hover, body .my-section3 .my-section5-team .my-section3-card:hover, body .my-section3 .my-section6-logos .my-section3-card:hover, body .my-section4 .my-section2-cards .my-section3-card:hover, body .my-section4 .my-section3-cards .my-section3-card:hover, body .my-section4 .my-section5-team .my-section3-card:hover, body .my-section4 .my-section6-logos .my-section3-card:hover, body .my-section5 .my-section2-cards .my-section3-card:hover, body .my-section5 .my-section3-cards .my-section3-card:hover, body .my-section5 .my-section5-team .my-section3-card:hover, body .my-section5 .my-section6-logos .my-section3-card:hover, body .my-section6 .my-section2-cards .my-section3-card:hover, body .my-section6 .my-section3-cards .my-section3-card:hover, body .my-section6 .my-section5-team .my-section3-card:hover, body .my-section6 .my-section6-logos .my-section3-card:hover {
           opacity: .5;
           cursor: pointer;
-          transition: .5s;
-          -webkit-transition: .5s; }
-        body .my-section2 .my-section2-cards .my-section3-card > div, body .my-section2 .my-section3-cards .my-section3-card > div, body .my-section3 .my-section2-cards .my-section3-card > div, body .my-section3 .my-section3-cards .my-section3-card > div, body .my-section4 .my-section2-cards .my-section3-card > div, body .my-section4 .my-section3-cards .my-section3-card > div {
+          transition: .3s;
+          -webkit-transition: .3s; }
+        body .my-section2 .my-section2-cards .my-section3-card > div, body .my-section2 .my-section3-cards .my-section3-card > div, body .my-section2 .my-section5-team .my-section3-card > div, body .my-section2 .my-section6-logos .my-section3-card > div, body .my-section3 .my-section2-cards .my-section3-card > div, body .my-section3 .my-section3-cards .my-section3-card > div, body .my-section3 .my-section5-team .my-section3-card > div, body .my-section3 .my-section6-logos .my-section3-card > div, body .my-section4 .my-section2-cards .my-section3-card > div, body .my-section4 .my-section3-cards .my-section3-card > div, body .my-section4 .my-section5-team .my-section3-card > div, body .my-section4 .my-section6-logos .my-section3-card > div, body .my-section5 .my-section2-cards .my-section3-card > div, body .my-section5 .my-section3-cards .my-section3-card > div, body .my-section5 .my-section5-team .my-section3-card > div, body .my-section5 .my-section6-logos .my-section3-card > div, body .my-section6 .my-section2-cards .my-section3-card > div, body .my-section6 .my-section3-cards .my-section3-card > div, body .my-section6 .my-section5-team .my-section3-card > div, body .my-section6 .my-section6-logos .my-section3-card > div {
           padding: 20px; }
-          body .my-section2 .my-section2-cards .my-section3-card > div h5, body .my-section2 .my-section3-cards .my-section3-card > div h5, body .my-section3 .my-section2-cards .my-section3-card > div h5, body .my-section3 .my-section3-cards .my-section3-card > div h5, body .my-section4 .my-section2-cards .my-section3-card > div h5, body .my-section4 .my-section3-cards .my-section3-card > div h5 {
+          body .my-section2 .my-section2-cards .my-section3-card > div h5, body .my-section2 .my-section3-cards .my-section3-card > div h5, body .my-section2 .my-section5-team .my-section3-card > div h5, body .my-section2 .my-section6-logos .my-section3-card > div h5, body .my-section3 .my-section2-cards .my-section3-card > div h5, body .my-section3 .my-section3-cards .my-section3-card > div h5, body .my-section3 .my-section5-team .my-section3-card > div h5, body .my-section3 .my-section6-logos .my-section3-card > div h5, body .my-section4 .my-section2-cards .my-section3-card > div h5, body .my-section4 .my-section3-cards .my-section3-card > div h5, body .my-section4 .my-section5-team .my-section3-card > div h5, body .my-section4 .my-section6-logos .my-section3-card > div h5, body .my-section5 .my-section2-cards .my-section3-card > div h5, body .my-section5 .my-section3-cards .my-section3-card > div h5, body .my-section5 .my-section5-team .my-section3-card > div h5, body .my-section5 .my-section6-logos .my-section3-card > div h5, body .my-section6 .my-section2-cards .my-section3-card > div h5, body .my-section6 .my-section3-cards .my-section3-card > div h5, body .my-section6 .my-section5-team .my-section3-card > div h5, body .my-section6 .my-section6-logos .my-section3-card > div h5 {
             font-weight: 700;
             margin: 0; }
-          body .my-section2 .my-section2-cards .my-section3-card > div p, body .my-section2 .my-section3-cards .my-section3-card > div p, body .my-section3 .my-section2-cards .my-section3-card > div p, body .my-section3 .my-section3-cards .my-section3-card > div p, body .my-section4 .my-section2-cards .my-section3-card > div p, body .my-section4 .my-section3-cards .my-section3-card > div p {
+          body .my-section2 .my-section2-cards .my-section3-card > div p, body .my-section2 .my-section3-cards .my-section3-card > div p, body .my-section2 .my-section5-team .my-section3-card > div p, body .my-section2 .my-section6-logos .my-section3-card > div p, body .my-section3 .my-section2-cards .my-section3-card > div p, body .my-section3 .my-section3-cards .my-section3-card > div p, body .my-section3 .my-section5-team .my-section3-card > div p, body .my-section3 .my-section6-logos .my-section3-card > div p, body .my-section4 .my-section2-cards .my-section3-card > div p, body .my-section4 .my-section3-cards .my-section3-card > div p, body .my-section4 .my-section5-team .my-section3-card > div p, body .my-section4 .my-section6-logos .my-section3-card > div p, body .my-section5 .my-section2-cards .my-section3-card > div p, body .my-section5 .my-section3-cards .my-section3-card > div p, body .my-section5 .my-section5-team .my-section3-card > div p, body .my-section5 .my-section6-logos .my-section3-card > div p, body .my-section6 .my-section2-cards .my-section3-card > div p, body .my-section6 .my-section3-cards .my-section3-card > div p, body .my-section6 .my-section5-team .my-section3-card > div p, body .my-section6 .my-section6-logos .my-section3-card > div p {
             font-style: italic;
             color: #777777; }
-  body .my-section4 .separator {
-    min-height: 80px;
-    min-width: 5px;
-    background-color: #f1f1f1; }
-    @media screen and (max-width: 576px) {
-      body .my-section4 .separator {
-        min-height: 40px; } }
-  body .my-section4 .my-section4-content {
+  body .my-section4 {
+    margin: 0 0 50px 0; }
+    body .my-section4 .separator {
+      min-height: 80px;
+      min-width: 5px;
+      background-color: #f1f1f1; }
+      @media screen and (max-width: 576px) {
+        body .my-section4 .separator {
+          min-height: 40px; } }
+    body .my-section4 .my-section4-content {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center;
+      -webkit-align-content: center;
+      -moz-align-content: center;
+      -ms-align-content: center;
+      align-content: center;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      body .my-section4 .my-section4-content .my-section4-text {
+        -webkit-box-flex: 0 0 30%;
+        -moz-box-flex: 0 0 30%;
+        -webkit-flex: 0 0 30%;
+        -ms-flex: 0 0 30%;
+        flex: 0 0 30%;
+        max-width: 20%;
+        padding: 0;
+        margin: 0; }
+        @media screen and (max-width: 576px) {
+          body .my-section4 .my-section4-content .my-section4-text {
+            max-width: 25%; } }
+        body .my-section4 .my-section4-content .my-section4-text h6 {
+          text-transform: uppercase;
+          font-weight: bold; }
+        body .my-section4 .my-section4-content .my-section4-text p {
+          font-size: .9em;
+          color: #777777; }
+          @media screen and (max-width: 576px) {
+            body .my-section4 .my-section4-content .my-section4-text p:last-child {
+              display: none; } }
+          body .my-section4 .my-section4-content .my-section4-text p:not(:last-child) {
+            font-weight: bold;
+            font-size: .9em; }
+        @media screen and (max-width: 576px) {
+          body .my-section4 .my-section4-content .my-section4-text h6, body .my-section4 .my-section4-content .my-section4-text p:not(:last-child) {
+            font-size: .7em; } }
+      body .my-section4 .my-section4-content .my-section4-text-before {
+        position: absolute;
+        left: 20%;
+        text-align: right; }
+        @media screen and (min-width: 1680px) {
+          body .my-section4 .my-section4-content .my-section4-text-before {
+            left: 23%; } }
+        @media screen and (max-width: 576px) {
+          body .my-section4 .my-section4-content .my-section4-text-before {
+            left: 5%; } }
+        @media (orientation: landscape) and (min-width: 576px) and (max-width: 992px) {
+          body .my-section4 .my-section4-content .my-section4-text-before {
+            left: 10%; } }
+      body .my-section4 .my-section4-content .my-section4-text-after {
+        position: absolute;
+        right: 20%;
+        text-align: left; }
+        @media screen and (min-width: 1680px) {
+          body .my-section4 .my-section4-content .my-section4-text-after {
+            right: 23%; } }
+        @media screen and (max-width: 576px) {
+          body .my-section4 .my-section4-content .my-section4-text-after {
+            right: 5%; } }
+        @media (orientation: landscape) and (min-width: 576px) and (max-width: 992px) {
+          body .my-section4 .my-section4-content .my-section4-text-after {
+            right: 10%; } }
+      body .my-section4 .my-section4-content .my-section4-pic {
+        -webkit-box-flex: 0 0 50%;
+        -moz-box-flex: 0 0 50%;
+        -webkit-flex: 0 0 50%;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        padding: 5px;
+        border: 8px solid #f1f1f1;
+        border-radius: 50%; }
+        @media screen and (max-width: 576px) {
+          body .my-section4 .my-section4-content .my-section4-pic {
+            -webkit-box-flex: 0 0 35%;
+            -moz-box-flex: 0 0 35%;
+            -webkit-flex: 0 0 35%;
+            -ms-flex: 0 0 35%;
+            flex: 0 0 35%; } }
+        body .my-section4 .my-section4-content .my-section4-pic:hover {
+          opacity: .4;
+          cursor: pointer;
+          border-color: lightblue;
+          transition: .3s;
+          -webkit-transition: .3s; }
+  body .my-section5 {
+    padding: 0 0 50px 0; }
+    body .my-section5 .my-section5-team .my-section5-member {
+      margin: 20px;
+      -webkit-box-flex: 0 0 20%;
+      -moz-box-flex: 0 0 20%;
+      -webkit-flex: 0 0 20%;
+      -ms-flex: 0 0 20%;
+      flex: 0 0 20%;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center;
+      -webkit-align-content: center;
+      -moz-align-content: center;
+      -ms-align-content: center;
+      align-content: center; }
+      body .my-section5 .my-section5-team .my-section5-member img {
+        border: 5px solid gray; }
+      body .my-section5 .my-section5-team .my-section5-member h6 {
+        padding-top: 15px;
+        font-weight: bold; }
+      body .my-section5 .my-section5-team .my-section5-member p {
+        color: #777777; }
+      body .my-section5 .my-section5-team .my-section5-member .my-section5-icons {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+        -ms-flex-pack: center;
+        -webkit-align-content: center;
+        -moz-align-content: center;
+        -ms-align-content: center;
+        align-content: center; }
+        body .my-section5 .my-section5-team .my-section5-member .my-section5-icons div {
+          margin: 5px;
+          width: 35px;
+          height: 35px;
+          padding: 5px;
+          border: 3px solid black;
+          text-align: center;
+          border-radius: 50%; }
+          body .my-section5 .my-section5-team .my-section5-member .my-section5-icons div:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            transition: .3s;
+            -webkit-transition: .3s; }
+    body .my-section5 .my-section5-footer {
+      color: #777777;
+      text-align: center;
+      width: 60%; }
+  body .my-section6 .my-section6-logos {
+    padding: 30px 0 30px 0; }
+    body .my-section6 .my-section6-logos .my-section6-logo {
+      -webkit-box-flex: 0 0 15%;
+      -moz-box-flex: 0 0 15%;
+      -webkit-flex: 0 0 15%;
+      -ms-flex: 0 0 15%;
+      flex: 0 0 15%;
+      min-width: 200px;
+      padding: 15px;
+      opacity: .4; }
+      body .my-section6 .my-section6-logos .my-section6-logo:hover {
+        opacity: 1;
+        transition: .3s;
+        -webkit-transition: .3s;
+        cursor: pointer; }
+  body .my-section7-back {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: stretch;
+    -moz-align-items: stretch;
+    -ms-align-items: stretch;
+    align-items: stretch;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-align-content: stretch;
+    -moz-align-content: stretch;
+    -ms-align-content: stretch;
+    align-content: stretch;
+    background: url("../images/build/map.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 100vh; }
+    body .my-section7-back .my-section7-jumbo {
+      -webkit-box-flex: 0 1 100%;
+      -moz-box-flex: 0 1 100%;
+      -webkit-flex: 0 1 100%;
+      -ms-flex: 0 1 100%;
+      flex: 0 1 100%;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center;
+      -webkit-align-content: center;
+      -moz-align-content: center;
+      -ms-align-content: center;
+      align-content: center;
+      background-color: rgba(0, 0, 0, 0.2);
+      background-size: cover;
+      height: 100vh;
+      min-height: 100vh;
+      color: white;
+      transition: 1s; }
+      body .my-section7-back .my-section7-jumbo:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+        transition: 1s; }
+      body .my-section7-back .my-section7-jumbo .my-section7-form {
+        -webkit-box-flex: 0 1 auto;
+        -moz-box-flex: 0 1 auto;
+        -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+        -ms-flex-pack: center;
+        -webkit-align-content: center;
+        -moz-align-content: center;
+        -ms-align-content: center;
+        align-content: center;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        align-self: stretch; }
+        body .my-section7-back .my-section7-jumbo .my-section7-form .my-section7-left {
+          -webkit-box-flex: 0 1 20%;
+          -moz-box-flex: 0 1 20%;
+          -webkit-flex: 0 1 20%;
+          -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
+          margin: 30px; }
+          @media screen and (max-width: 576px) {
+            body .my-section7-back .my-section7-jumbo .my-section7-form .my-section7-left {
+              -webkit-box-flex: 0 1 90%;
+              -moz-box-flex: 0 1 90%;
+              -webkit-flex: 0 1 90%;
+              -ms-flex: 0 1 90%;
+              flex: 0 1 90%;
+              margin: 10px; } }
+        body .my-section7-back .my-section7-jumbo .my-section7-form .my-section7-right {
+          margin: 30px;
+          -webkit-box-flex: 0 1 40%;
+          -moz-box-flex: 0 1 40%;
+          -webkit-flex: 0 1 40%;
+          -ms-flex: 0 1 40%;
+          flex: 0 1 40%; }
+          @media screen and (max-width: 576px) {
+            body .my-section7-back .my-section7-jumbo .my-section7-form .my-section7-right {
+              -webkit-box-flex: 0 1 90%;
+              -moz-box-flex: 0 1 90%;
+              -webkit-flex: 0 1 90%;
+              -ms-flex: 0 1 90%;
+              flex: 0 1 90%;
+              margin: 10px; } }
+        @media screen and (max-width: 576px) {
+          body .my-section7-back .my-section7-jumbo .my-section7-form {
+            -webkit-box-flex: 0 1 100%;
+            -moz-box-flex: 0 1 100%;
+            -webkit-flex: 0 1 100%;
+            -ms-flex: 0 1 100%;
+            flex: 0 1 100%; } }
+      body .my-section7-back .my-section7-jumbo button {
+        -webkit-box-flex: 0 1 auto;
+        -moz-box-flex: 0 1 auto;
+        -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        margin: 10px; }
+  body .my-section8 {
+    padding: 20px;
+    -webkit-box-flex: 0 0 100%;
+    -moz-box-flex: 0 0 100%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -328,11 +674,11 @@ body {
     -moz-align-items: center;
     -ms-align-items: center;
     align-items: center;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    justify-content: center;
-    -ms-flex-pack: center;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    justify-content: flex-start;
+    -ms-flex-pack: flex-start;
     -webkit-align-content: center;
     -moz-align-content: center;
     -ms-align-content: center;
@@ -341,81 +687,100 @@ body {
     -moz-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-    body .my-section4 .my-section4-content .my-section4-text {
+    @media screen and (max-width: 576px) {
+      body .my-section8 {
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+        -ms-flex-pack: center; } }
+    body .my-section8 p {
       -webkit-box-flex: 0 0 30%;
       -moz-box-flex: 0 0 30%;
       -webkit-flex: 0 0 30%;
       -ms-flex: 0 0 30%;
       flex: 0 0 30%;
-      max-width: 20%;
-      padding: 0;
-      margin: 0; }
+      text-align: center;
+      font-size: 14px;
+      padding-top: 10px; }
       @media screen and (max-width: 576px) {
-        body .my-section4 .my-section4-content .my-section4-text {
-          max-width: 25%; } }
-      body .my-section4 .my-section4-content .my-section4-text h6 {
-        text-transform: uppercase;
-        font-weight: bold; }
-      body .my-section4 .my-section4-content .my-section4-text p {
-        font-size: .9em;
-        color: #777777; }
-        @media screen and (max-width: 576px) {
-          body .my-section4 .my-section4-content .my-section4-text p:last-child {
-            display: none; } }
-        body .my-section4 .my-section4-content .my-section4-text p:not(:last-child) {
-          font-weight: bold;
-          font-size: .9em; }
+        body .my-section8 p {
+          -webkit-box-flex: 0 1 90%;
+          -moz-box-flex: 0 1 90%;
+          -webkit-flex: 0 1 90%;
+          -ms-flex: 0 1 90%;
+          flex: 0 1 90%;
+          -webkit-box-ordinal-group: 1;
+          -moz-box-ordinal-group: 1;
+          -ms-flex-order: 1;
+          -webkit-order: 1;
+          order: 1;
+          font-size: 12px; } }
+    body .my-section8 .my-section8-icons {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-flex: 0 0 30%;
+      -moz-box-flex: 0 0 30%;
+      -webkit-flex: 0 0 30%;
+      -ms-flex: 0 0 30%;
+      flex: 0 0 30%;
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      align-items: center;
+      -webkit-justify-content: flex-end;
+      -moz-justify-content: flex-end;
+      -ms-justify-content: flex-end;
+      justify-content: flex-end;
+      -ms-flex-pack: flex-end;
+      -webkit-align-content: center;
+      -moz-align-content: center;
+      -ms-align-content: center;
+      align-content: center;
+      -webkit-flex-wrap: nowrap;
+      -moz-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
       @media screen and (max-width: 576px) {
-        body .my-section4 .my-section4-content .my-section4-text h6, body .my-section4 .my-section4-content .my-section4-text p:not(:last-child) {
-          font-size: .7em; } }
-    body .my-section4 .my-section4-content .my-section4-text-before {
-      position: absolute;
-      left: 20%;
-      text-align: right; }
-      @media screen and (min-width: 1680px) {
-        body .my-section4 .my-section4-content .my-section4-text-before {
-          left: 23%; } }
-      @media screen and (max-width: 576px) {
-        body .my-section4 .my-section4-content .my-section4-text-before {
-          left: 5%; } }
-      @media (orientation: landscape) and (min-width: 576px) and (max-width: 992px) {
-        body .my-section4 .my-section4-content .my-section4-text-before {
-          left: 10%; } }
-    body .my-section4 .my-section4-content .my-section4-text-after {
-      position: absolute;
-      right: 20%;
-      text-align: left; }
-      @media screen and (min-width: 1680px) {
-        body .my-section4 .my-section4-content .my-section4-text-after {
-          right: 23%; } }
-      @media screen and (max-width: 576px) {
-        body .my-section4 .my-section4-content .my-section4-text-after {
-          right: 5%; } }
-      @media (orientation: landscape) and (min-width: 576px) and (max-width: 992px) {
-        body .my-section4 .my-section4-content .my-section4-text-after {
-          right: 10%; } }
-    body .my-section4 .my-section4-content .my-section4-pic {
-      -webkit-box-flex: 0 0 50%;
-      -moz-box-flex: 0 0 50%;
-      -webkit-flex: 0 0 50%;
-      -ms-flex: 0 0 50%;
-      flex: 0 0 50%;
-      padding: 5px;
-      border: 8px solid #f1f1f1;
-      border-radius: 50%; }
-      @media screen and (max-width: 576px) {
-        body .my-section4 .my-section4-content .my-section4-pic {
-          -webkit-box-flex: 0 0 35%;
-          -moz-box-flex: 0 0 35%;
-          -webkit-flex: 0 0 35%;
-          -ms-flex: 0 0 35%;
-          flex: 0 0 35%; } }
-      body .my-section4 .my-section4-content .my-section4-pic:hover {
-        opacity: .4;
-        cursor: pointer;
-        border-color: lightblue;
-        transition: .5s;
-        -webkit-transition: .5s; }
+        body .my-section8 .my-section8-icons {
+          -webkit-box-flex: 0 1 90%;
+          -moz-box-flex: 0 1 90%;
+          -webkit-flex: 0 1 90%;
+          -ms-flex: 0 1 90%;
+          flex: 0 1 90%;
+          -webkit-justify-content: center;
+          -moz-justify-content: center;
+          -ms-justify-content: center;
+          justify-content: center;
+          -ms-flex-pack: center;
+          -webkit-box-ordinal-group: 0;
+          -moz-box-ordinal-group: 0;
+          -ms-flex-order: 0;
+          -webkit-order: 0;
+          order: 0; } }
+      body .my-section8 .my-section8-icons div {
+        margin: 5px;
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        border: 3px solid black;
+        text-align: center;
+        border-radius: 50%;
+        color: white;
+        background-color: black; }
+        body .my-section8 .my-section8-icons div:hover {
+          background-color: white;
+          color: black;
+          cursor: pointer;
+          transition: .3s;
+          -webkit-transition: .3s; }
   body .my-section3, body .my-section5 {
     background-color: #f7f7f7; }
 
@@ -429,13 +794,24 @@ body {
     background-color: rgba(254, 209, 54, 0.5);
     color: white;
     cursor: pointer; }
+  @media screen and (max-width: 576px) {
+    .my-jumbo-button {
+      padding: 5px 20px;
+      font-size: smaller; } }
 
 .my-section-heading {
   padding: 70px 0 30px 0;
   text-align: center; }
+  @media screen and (max-width: 576px) {
+    .my-section-heading {
+      padding: 10px 0 10px 0; } }
   .my-section-heading h1 {
     text-transform: uppercase;
     font-weight: 700; }
+    @media screen and (max-width: 576px) {
+      .my-section-heading h1 {
+        padding: 10px 0 10px 0;
+        font-size: 25px; } }
   .my-section-heading p {
     font-style: italic;
     color: #777777; }
